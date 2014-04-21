@@ -1,0 +1,800 @@
+ 
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
+	<meta name="fragment" content="!">
+	<base target="_blank">
+	<title>Sweden Quiz</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<link href='/static/forms/client/css/2645369537-formview_ltr.css' type='text/css' rel='stylesheet'>
+	
+	<!-- Referencing Jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+	<script src="jquery.validate.js" type="text/javascript"></script>
+	<script src="jquery.metadata.js" type="text/javascript"></script>
+	
+	<!-- Validating radio buttons -->
+	<script type="text/javascript">
+		$.metadata.setType("attr", "validate");
+		$(document).ready(function() {
+			$("#commentForm").validate();
+		});
+	</script>
+			
+	<!-- Validating input -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#commentForm").validate({meta: "validate"});
+		});
+	</script>
+	
+
+	
+	<style type="text/css"> <!-- Start of CSS -->
+
+		body {
+			background: #005293;
+			font-family: Calibri ,'Crimson Text',Garamond,Georgia,'Times New Roman',serif;
+			color: #ffffff;
+			margin: 0;
+			padding: 0;
+		}
+
+		hr { 
+			width:100%; 
+			height:10px; 
+			background: #FECB00 
+		}
+	
+		img {
+			float:left;
+			margin:5px;
+		}
+
+		input, select, textarea {
+			font-family: Tahoma,Arial,serif;
+			font-size: 13px;
+		}
+		
+		div.ss-form-container {
+			border: 1px solid #fb9d54;
+			border-width: 0 1px;
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 0 20px 20px;
+			width: 80%;
+		}
+		
+		h1.ss-form-title, .ss-resp-card .ss-header-image {
+			background: #e05e2c url('//themes.googleusercontent.com/image?id=1jFLY6BvhmAGtydKbS1Jtn9qzsFAAd4S4NDBt733E07vC3uMIPeNKYIwU3SBb8iKR_IrF\000026tw=600\000026th=600') bottom right no-repeat;
+		}
+		
+		h1.ss-form-title {
+		  border-bottom-left-radius: 10px;
+		  border-bottom-right-radius: 10px;
+		  color: #fff;
+		  font-size: 32px;
+		  line-height: 36px;
+		  margin: 0 0 20px;
+		  min-height: 260px;
+		  padding: 20px 360px 20px 20px;
+		  background-image:url('Lenas_hand.png');
+		  background-color:#FECB00;
+		}
+
+		.ss-resp-card .ss-header-image {
+		  height: 90px;
+		}
+
+		h1, h2 {
+		  font-family: 'Old Standard TT';
+		  color: #FECB00;
+		}
+
+		div.errorbox-bad {
+		  background: none;
+		  border: none;
+		  padding: 0;
+		}
+
+		div.errorbox-bad div.ss-form-entry {
+		  background: #fff0da;
+		  border: 1px solid #ff5d22;
+		  padding: 5px;
+		}
+
+		div.ss-form-entry {
+		  margin: 0 0 20px;
+		}
+
+		div.ss-section-header, div.ss-page-break {
+		  margin: 20px 0;
+		  padding: 0;
+		}
+
+		h2.ss-section-title, h2.ss-page-title {
+		  background: none;
+		  border-bottom: 1px solid #f0c090;
+		  font-size: 26px;
+		  line-height: 30px;
+		  margin: 0 0 5px;
+		  padding: 0 0 5px;
+		}
+
+		div.ss-section-description, div.ss-page-description {
+		  margin: 0;
+		  padding: 0;
+		}
+
+		td.ss-scalenumbers, td.ss-scalerow, td.ss-gridnumbers, td.ss-gridrow, tr.ss-grid-row-odd, tr.ss-grid-row-even {
+		  border-color: #ffe0ba;
+		}
+
+		tr.ss-grid-row-odd {
+		  background: #fffae8;
+		}
+
+		tr.ss-grid-row-even {
+		  background: #fff;
+		}
+
+		label.ss-q-help {
+		  color: #b08060;
+		}
+	
+		td.ss-scalenumbers, td.ss-scalerow, td.ss-leftlabel, td.ss-rightlabel, label.ss-gridnumber, span.ss-powered-by, .ss-powered-by a:link, .ss-powered-by a:visited, span.ss-terms {
+		  color: #b08060;
+		}
+		
+		label.error {
+			display: list-item;
+			color: #ff0600;
+			font-size: 12px;
+			list-style-position: inside;
+			padding: 5px 0 0;
+		}
+		img.main_image {
+			max-width: 100%;
+			height: auto:;
+			width: auto/9;
+			border-style: solid;
+			border-width: 1px; 
+			border-color: #febc00; 
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		}
+		img.portrait_body_image {
+			max-width: 25%;
+			height: auto:;
+			width: auto/9
+		}
+		img.landscape_body_image {
+			max-width: 50%;
+			height: auto:;
+			width: auto/9
+		}
+		h1.heading {
+			line-height:200%;
+			text-align:center;
+			background:#005293;
+			color:#febc00;
+			border-style: solid;
+			border-width: 1px; 
+			border-color: #febc00; 
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			<!--  text-indent: 5px; -->
+			font-variant: small-caps;
+		}
+		div.preamble {
+		color:#005293;
+		font-weight: bold; 
+		font-size: 110%;
+		line-height: 1.3;
+		font-family: calibri,'Crimson Text',Garamond,Georgia,'Times New Roman',serif;
+		}
+		
+		div.ss-form-entry{
+		color:#344A48;
+		}
+		
+		div.ss-q-title{
+		color:#005293;
+		}
+		
+		div.ss-form-question{
+		background-color:#D5D6D2;
+		}
+	</style> <!-- End of CSS -->
+
+
+	<link href='/static/forms/client/css/1432132809-mobile_formview_ltr.css' type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+	<script type="text/javascript">
+			/**
+	 * @license
+	 *! H5F
+	 * https://github.com/ryanseddon/H5F/
+	 * Copyright (c) Ryan Seddon | Licensed MIT
+	 */
+
+	(function(e,t){"function"==typeof define&&define.amd?define(t):e.H5F=t()})(this,function(){var e,t,a,i,n,r,s,l,u,o,c,d,v,f,p,m,h,g,b,y,w,C,N,A,E,$,k=document,x=k.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder"};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var l=0,u=e.length;u>l;l++)s(e[l]);else s(e)},s=function(a){var i,n=a.elements,r=n.length,s=!!a.attributes.novalidate;if(b(a,"invalid",u,!0),b(a,"blur",u,!0),b(a,"input",u,!0),b(a,"keyup",u,!0),b(a,"focus",u,!0),b(a,"change",u,!0),b(a,"click",o,!0),b(a,"submit",function(i){e=!0,t||s||a.checkValidity()||w(i)},!1),!v())for(a.checkValidity=function(){return c(a)};r--;)i=!!n[r].attributes.required,"fieldset"!==n[r].nodeName.toLowerCase()&&l(n[r])},l=function(e){var t=e,a=g(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,s=/^(input|keyup)$/i,l=r.test(n.type)?n.type:n.pattern?n.pattern:!1,u=f(t,l),o=m(t,"step"),v=m(t,"min"),h=m(t,"max"),b=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return c.call(this,t)},t.setCustomValidity=function(e){d.call(t,e)},t.validity={valueMissing:a,patternMismatch:u,rangeUnderflow:v,rangeOverflow:h,stepMismatch:o,customError:b,valid:!(a||u||o||v||h||b)},n.placeholder&&!s.test(i)&&p(t)},u=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,s=/^(checkbox|radio)$/i,o=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||l(t),t.validity.valid&&(""!==t.value||s.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&o&&(y(t.form,"keyup",u,!0),o=!1))},c=function(t){var a,i,n,r,s=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var l=0,o=a.length;o>l;l++)i=a[l],n=!!i.attributes.required,r=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&(n||r&&n)&&(u(i),i.validity.valid||s||(e&&i.focus(),s=!0));return!s}return u(t),t.validity.valid},d=function(e){var t=this;t.validationMessage=e},o=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(x,"validity")&&E(x,"checkValidity")},f=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},p=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,s=/^password$/i,l=!!("placeholder"in x);l||!r.test(e.nodeName)||s.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,b(e.form,"submit",function(){i="submit",p(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),s=(r-a)%n;return g(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==s:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},h=function(e){var t=!!e.attributes.required;return t?g(e):!1},g=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},b=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+		  </script>
+	<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/a/systemvaruhuset.se/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/oembed?url=https://docs.google.com/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/viewform&amp;format=xml">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="Sweden Quiz"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/viewform"><meta property="og:image" content="https://ssl.gstatic.com/docs/forms/social/social-forms.png"><meta property="og:image:width" content="90"><meta property="og:image:height" content="90"><meta property="og:description" content="Quiz about Sweden">
+</head>
+
+<body dir="ltr" class="ss-base-body">
+	<div itemscope itemtype="http://schema.org/CreativeWork/FormObject">
+		<meta itemprop="name" content="Sweden Quiz">
+		<meta itemprop="description" content="Quiz about Sweden">
+		<meta itemprop="url" content="https://docs.google.com/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/viewform">
+		<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/viewform?embedded=true">
+		<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
+
+		<div class="ss-form-container">
+			<div class="ss-header-image"></div>
+			<div class="ss-top-of-page">
+				<div class="ss-form-heading">
+					<h1 class="ss-form-title" dir="ltr">Sweden Quiz</h1>
+					<div class="ss-form-desc ss-no-ignore-whitespace">This is a great quiz about Sweden that you really should try. Can you beat the best? If you do, you can win great prizes.</div>
+
+					<hr class="ss-email-break" style="display:none;">
+				</div>
+			</div>
+			<div class="ss-form">
+				<!-- Start of form -->
+				<!-- Updated form action (redirected thank you page, id="commentForm" added for validation purposes) -->
+				<script type="text/javascript">var submitted=false;</script>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+				<form action="https://docs.google.com/a/systemvaruhuset.se/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/formResponse" 
+					method="post"
+					target="hidden_iframe" 
+					id="commentForm"
+					onsubmit="submitted=true;">
+				
+				<!-- Original form action (posting answers)
+				<form action="https://docs.google.com/a/systemvaruhuset.se/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/formResponse" 
+					method="POST" 
+					id="ss-form" 
+					target="_self" 
+					onsubmit=""> 
+					-->
+					<div role="list">
+
+						<div class="ss-form-question errorbox-good" role="listitem"> <!-- Start of name question -->
+							<div dir="ltr" class="ss-item  ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-item-label" for="entry_1672897692">
+										<div class="ss-q-title">Tell us your name!</div>
+										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+									</label>
+									<input type="text" 
+										name="entry.1672897692" 
+										value="" 
+										class="required ss-q-short" 
+										id="entry_1672897692" 
+										dir="auto" aria-label="Tell us your name!  " 
+										title="">
+									<div class="error-message"></div>
+								</div>
+							</div>
+						</div> <!-- End of name question -->
+						<div class="ss-form-question errorbox-good" role="listitem"> <!-- Start of phone number question -->
+							<div dir="ltr" class="ss-item  ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-item-label" for="entry_1839521793">
+										<div class="ss-q-title">Tell us your phone number!</div>
+										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+									</label>
+									<input type="text" 
+										name="entry.1839521793" 
+										value="" 
+										class="required ss-q-short" 
+										id="entry_1839521793" 
+										dir="auto" aria-label="Tell us your phone number!  " 
+										title="">
+									<div class="error-message"></div>
+								</div>
+							</div>
+						</div> <!-- End of phone number question -->
+						<div class="ss-form-question errorbox-good" role="listitem"> <!-- Start of email adress question -->
+							<div dir="ltr" class="ss-item  ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-item-label" for="entry_1747344982">
+										<div class="ss-q-title">Tell us your e-mail adress!</div>
+										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+									</label>
+									<input type="text" 
+										name="entry.1747344982" 
+										value="" 
+										class="email required ss-q-short" 
+										id="entry_1747344982" 
+										dir="auto" 
+										aria-label="Tell us your e-mail adress!" 
+										title="">
+									<div class="error-message"></div>
+								</div>
+							</div>
+						</div> <!-- End of email adress question --> 
+							
+						<h1 class="heading">Innovation </h1>
+						<img class="main_image" src="innovation_credited.jpg" alt="Skype-user">
+							<div class="preamble">
+							Sweden is a small country, home to no more than 0.14% of the global population.  
+							Less than a century ago, it was even among the poorest nations in Europe.  
+							Today, however, Sweden has rapidly emerged as a world leader in innovation. 
+							Swedish companies have in many instances “outgrown” Sweden, with products like 
+							Ericsson Telecom Systems, Ikea Furniture, ABB Powerstations, Volvo trucks, 
+							Minecraft computer games and Skype now well-known throughout the world. 
+							</div>
+						<p>One of the most widely recognized Swedish inventors is Alfred Nobel. 
+						In his last will and testament, he donated 94% of his fortune, used to create the Nobel Prize.  
+						The Prize is awarded to those recognized for their “benefit to mankind” in five categories:  
+						
+						<img class="portrait_body_image" src="Nobel_Prize.png" alt="Medal">
+						<ul>
+						<li>Physics, 
+						<li>Chemistry 
+						<li>Physiology or Medicine
+						<li>Literature
+						<li>Peace
+						</ul>
+						<p>
+						In 1968, Sweden's central bank instituted "The Sveriges Riksbank Prize in Economic Sciences in memory of Alfred Nobel, which has since been awarded together with the Nobel Prizes.
+						The Nobel Prize has been awarded annually since 1901 and is considered the most prestigious scientific award in the world. 
+						<ol>
+						<li>Prize-winning discoveries: X-rays, radioactivity and penicillin. 
+						<li>Peace Laureates:  Nelson Mandela and Barack Obama. 
+						<li>Nobel Laureates in Literature: Rudyard Kipling and Doris Lessing.
+						</ol>
+						Did you know:
+						<ol>
+						<li>Swedish scientist Anders Celsius invented the Celsius temperature scale used today throughout Europe and the Middle East?
+						<li>The father of our modern classification system for plants and living organisms was Swedish botanist Carl von Linné
+						<li>The mandatory tracking system used on ships to identify and locate other vessels, to avoid collision, was created by Swedish inventor Håkan Lans. 
+						<li>Swedish innovator Alfred Nobel invented dynamite.
+						<li>The first implantable pacemaker was developed by Swedish doctor Rune Elmqvist.  
+						<li>The safety match, which only ignites on the striking surface of the box, is a Swedish invention.  
+						<li>The three-point safety belt, which changed the world by preventing injuries during a car crash, was created by Swedish inventor Nils Bohlin.  
+						</ol>
+						<hr>
+							
+						<div class="ss-form-question errorbox-good" role="listitem"> <!-- Start of Nobel Question -->
+							<div dir="ltr" class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-item-label" for="entry_1316715896">
+										<div class="ss-q-title">What year was the first Nobel Prize awarded?</div>
+										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+									</label>
+
+									<span class="ss-choices" role="radiogroup" aria-label="What year was the first Nobel Prize awarded?"> <!-- Start of Nobel radio buttons -->
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.2026467650" 
+														value="1895" 
+														id="group_2026467650_1" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="1895"
+														validate="required:true">
+												</span>
+												<span class="ss-choice-label">1895</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.2026467650" 
+														value="1901" 
+														id="group_2026467650_2" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="1901">
+												</span>
+												<span class="ss-choice-label">1901</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.2026467650" 
+														value="1968" 
+														id="group_2026467650_3" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="1968">
+												</span>
+												<span class="ss-choice-label">1968</span>
+											</label>
+										</span>
+										<p>
+									</span> <!-- End of Nobel radio buttons -->
+									<div class="error-message"></div>
+								</div>
+							</div>
+						</div> <!-- End of Nobel Question -->
+						<hr>
+						<h1>Society </h1>
+						<img class="main_image" src="society_credited.jpg" alt="On parental leave">
+						Sweden ranks as one of the world’s most gender-egalitarian countries. An extensive welfare system makes it easier for both genders to balance work and family life. For instance, in Sweden, parents are entitled to 480 days of parental leave when a child is born or adopted. The parental leave is financed jointly by all Swedes through the tax system. 
+						<p>The Swedish Tax Agency is actually one of the most popular governmental agencies. Unlike in some countries, where paying tax is seen as something negative, many Swedes tolerate – and even welcome – taxation, as it is the foundation for high quality public services. 
+						<p>Fun Fact:  The Swedish word for tax – skatt – also means “treasure.” 
+						<p><img class="landscape_body_image" src="society_body_credited.jpg" alt="In the woods">
+						Sweden is also home to beautiful nature, which can be explored and enjoyed by all Swedes thanks to the the Right of Public Access, written into the Swedish constitution. While the right allows the public to roam freely on any land, it also brings responsibilities – to treat flora and fauna and other people’s property with care. The philosophy can be summed up in the phrase, ‘Don’t disturb, Don’t destroy’.
+						<p>Swedish citizens are additionally afforded the right to “Freedom of information,” which allows the public access to official records.  Scrutiny is seen as valuable for a democracy, and transparency reduces the risk of power being abused. 
+						Some important dates in Swedish history: 
+						<ul>
+						<li>1250s: King Birger Jarl passes a law on violence against women prohibiting rape and abduction.
+						<li>1921: Women get the right to vote and run for office. 
+						<li>1974: Sweden becomes the first country in the world to replace maternity leave with parental leave.
+						<li>1980: Sweden, a constitutional monarchy, makes its Act of Succession gender-neutral.
+						</ul>
+						
+						<div class="ss-form-question errorbox-good" role="listitem"> <!-- Start of parental leave question (q2) -->
+							<div dir="ltr" class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-item-label" for="entry_1905466804">
+										<div class="ss-q-title">How many days is Swedish parental leave?</div>
+										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+									</label>
+
+									<span class="ss-choices" role="radiogroup" aria-label="How many days is Swedish parental leave?">
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.1626645930" 
+														value="450" 
+														id="group_1626645930_1" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="450"
+														validate="required:true">
+												</span>
+												<span class="ss-choice-label">450</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.1626645930" 
+														value="480" 
+														id="group_1626645930_2" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="480">
+												</span>
+												<span class="ss-choice-label">480</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.1626645930" 
+														value="540" 
+														id="group_1626645930_3" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="540">
+												</span>
+												<span class="ss-choice-label">540</span>
+											</label>
+										</span>
+										<p>
+									</span>
+									<div class="error-message"></div>							
+								</div>
+							</div>
+						</div>  <!-- End of parental leave question (q2) -->
+						
+						<h1>Sustainability</h1>
+						<img class="main_image" src="sustainability_credited.jpg" alt="Recycling together">
+						Sweden was an early adopter of sustainable thinking. Back in the 1960s, it recognized that the rapid loss of natural resources had to be confronted, and took a lead in organizing the first UN conference on the environment. Since then, Sweden has continued to work actively with environmental issues, both nationally and internationally.
+						<p>Less than 1% of Sweden’s household waste ends up in a rubbish dump. This means more than 99% of all household waste is recycled in different ways: newspapers are turned into paper mass; bottles are reused or melted into new items; plastic containers become plastic raw material; food is composted and becomes soil or biogas through a complex chemical process. 
+						Rubbish trucks often run on recycled electricity or biogas. 
+						Special rubbish trucks go around cities to pick up electronics and hazardous waste. 
+						Pharmacists accept leftover medicine. 
+						Swedes also take their larger waste, such as a used TV or broken furniture, to recycling centers on the outskirts of the cities.
+						<p>Today, Sweden has the highest percentage of renewable energy in the European Union (over 47 %). 
+						By 2020, at least half of the country’s energy should be renewable, a target the Government is confident to reach.
+						<p>Sweden has also been a role model in water management. Tap water is drinkable, and in the summer you can swim in central parts of the capital, Stockholm. 
+						Although Sweden is a frontrunner in environmental policy, its Government recognizes that there is still room for improvement. 
+						As such, for 2013-2016, Sweden will allocate approximately SEK 22 billion (roughly equivalent to 12,2 billion DHS) to environmental measures.
+						Cutting-edge technology, a wealth of natural resources and a high proportion of renewable energy 
+						– Sweden and Swedish companies are on the front line as the world embarks on a shift to more sustainable energy systems.
+
+						
+						<div class="ss-form-question errorbox-good" role="listitem"> <!-- Start of waste question (q3) -->
+							<div dir="ltr" class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-item-label" for="entry_1576337578">
+										<div class="ss-q-title">How much of the household waste in Sweden ends up in a rubbish dump?</div>
+										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+									</label>
+									<span class="ss-choices" role="radiogroup" aria-label="How much of the household waste in Sweden ends up in a rubbish dump?  ">
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.470313780" 
+														value="1%" 
+														id="group_470313780_1" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="1%"
+														validate="required:true">
+												</span>
+												<span class="ss-choice-label">1%</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.470313780" 
+														value="2%" 
+														id="group_470313780_2" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="2%">
+												</span>
+												<span class="ss-choice-label">2%</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.470313780" 
+														value="5%" 
+														id="group_470313780_3" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="5%">
+												</span>
+												<span class="ss-choice-label">5%</span>
+											</label>
+										</span>
+										<p>
+									</span>
+									<div class="error-message"></div>
+								</div>
+							</div>
+						</div> <!-- End of waste question (q3) -->
+						
+						<h1>Swedish Literature </h1>
+						<img class="main_image" src="literature_credited.jpg" alt="Recycling together">
+						The first literary text from Sweden is the Rök Runestone, carved during the Viking Age around 800 AD. 
+						It wasn’t until the Swedish language was standardized in the 16th century that Swedish literature started to flourish.
+						<p>
+						<img src="book.png" alt="Old Book" width="84" height="84">
+						<p>During the 19th century, Swedish writers started to reach worldwide fame with authors such as August Strindberg, a socio-realistic writer and playwright. 
+						The early 20th century continued to produce notable authors, such as Selma Lagerlöf (Nobel laureate 1909). 
+						Selma Lagerlöf was a teacher and writer who wrote about Nils Holgersson’s wonderful journey through Sweden in an attempt to improve Swedish school material. 
+						<p>Although Sweden has a relatively small population of only 9 million people, the Swedish language is very significant in terms of literary success. 
+						Swedish is one of the world's ten most translated languages.
+						<p>Between 2006-2010 alone, approximately 3,400 fiction titles by Swedish authors were translated. 
+						This was due in large part, to the success of Swedish crime writers. Stieg Larsson and Henning Mankell alone have together sold more than 100 million copies of their books. 
+						<p>But the Swedish literary triumph is both older and broader than that. 
+						Swedish literature has been popular since the 1800s, 
+						when Esaias Tegner's "Frithiof Saga" was praised by Goethe for its combination of savagery and sensitivity.
+						<p>In recent decades, many Swedish writers have established themselves internationally, such as the detective novelist Henning Mankell (translated to 37 different languages) and writer Stieg Larsson, 
+						who has caused an international sensation with the Millennium Trilogy. 
+						Another successful writer is Jan Guillou who, among other works, has written a series on the Knight Templar Arn Magnusson, 
+						giving a more nuanced view of Islamic culture than most books about knight templars. 
+						<p>Swedish poetry has developed since the 17th century, with Georg Stiernhielm as the first writer of classical poetry in Swedish. 
+						It further progressed with Johan Henric Kellgren (18th century), the first to write fluent Swedish prose. 
+						Arguably the most famous Swedish poet of the 20th century is Nobel Laureate Tomas Tranströmer. 
+						His poetry is distinguished by a Christian mysticism, moving on the verge between dream and reality, the physical and the metaphysics.
+
+						
+						<div class="ss-form-question errorbox-good" role="listitem"> <!-- Start of literature question (q4) -->
+							<div dir="ltr" class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-item-label" for="entry_1289143491">
+										<div class="ss-q-title">When was the first Swedish “book” written?</div>
+										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+									</label>
+
+									<span class="ss-choices" role="radiogroup" aria-label="When was the first Swedish “book” written?">
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.668284749" 
+														value="800 AD" 
+														id="group_668284749_1" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="800 AD"
+														validate="required:true">
+												</span>
+												<span class="ss-choice-label">800 AD</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.668284749" 
+														value="1901" 
+														id="group_668284749_2" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="1901">
+												</span>
+												<span class="ss-choice-label">1901</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.668284749" 
+														value="17th century" 
+														id="group_668284749_3" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="17th century">
+												</span>
+												<span class="ss-choice-label">17th century</span>
+											</label>
+										</span>
+										<p>
+									</span>
+									<div class="error-message"></div>
+								</div>
+							</div>
+						</div> <!-- End of literature question (q4) -->
+						
+						<h1>Children’s literature </h1>
+						<img class="main_image" src="childrens_literature_credited.jpg" alt="Reading for children">
+						The first Swedish children book was published in 1591 as an adaptation of a German book. Today, Swedish children’s literature has transformed into a very independent and strong genre. 
+						<p>Swedish writer Astrid Lindgren has gained international fame through her works such as Pippi Longstocking, Emil of Maple Hills, among others. 
+						With 145 million books sold worldwide in more than 80 different languages, she is the most read Swedish author of all categories. 
+						<p><img class="landscape_body_image" src="childrens_literature_body_credited.jpg" alt="Stamp from Russia">
+						<p>Her most well-known character Pippi Longstocking’s rebellious behaviour at first sparked resistance among some defenders of cultural values, 
+						but eventually she was accepted, and with that children's literature was freed from the obligation to promote moralism. 
+						<p>Astrid also has written twelve books about Emil of Maple Hills, about a boy on the Småland countryside in the early 1900s who continuously gets into trouble because of his pranks. 
+						Coincidentally, Småland is also the name of the children’s playground at Ikea. 
+						<p>Swedish children’s literature remains one of its strongest genres because it maintains a child’s perspective without avoiding taboo topics.  
+						Common topics currently found in Swedish children’s literature are moral dilemmas, peer pressure, and respect for the environment. 
+
+						
+						<div class="ss-form-question errorbox-good" role="listitem"> <!-- Start of Astrid Lindgren question (q5) -->
+							<div dir="ltr" class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-item-label" for="entry_232126529">
+										<div class="ss-q-title">How many languages have Astrid Lindgren’s books been translated into?</div>
+										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+									</label>
+
+									<span class="ss-choices" role="radiogroup" aria-label="How many languages have Astrid Lindgren’s books been translated into?">
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.124041592" 
+														value="8" 
+														id="group_124041592_1" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="8"
+														validate="required:true">
+												</span>
+												<span class="ss-choice-label">8</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.124041592" 
+														value="18" 
+														id="group_124041592_2" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="18">
+												</span>
+												<span class="ss-choice-label">18</span>
+											</label>
+										</span> 
+										<p>
+										<span class="ss-choice-item">
+											<label>
+												<span class="ss-choice-item-control goog-inline-block">
+													<input type="radio" 
+														name="entry.124041592" 
+														value="80" 
+														id="group_124041592_3" 
+														role="radio" 
+														class="ss-q-radio" 
+														aria-label="80">
+												</span>
+												<span class="ss-choice-label">80</span>
+											</label>
+										</span>
+										<p>
+									</span>
+									<div class="error-message"></div>
+								</div>
+							</div>
+						</div>  <!-- End of Astrid Lindgren question (q5) -->
+		
+						<input type="hidden" name="draftResponse" value="[,,&quot;682547871976820341&quot;]">
+						<input type="hidden" name="pageHistory" value="0">
+						<input type="hidden" name="fromEmail" value="false">
+						<input type="hidden" name="fbzx" value="682547871976820341">
+
+						<div class="ss-item ss-navigate">
+							<table id="navigation-table">
+								<tbody>
+									<tr>
+										<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+											<input type="submit" name="submit" value="Skicka" id="ss-submit">
+											<!-- <div class="ss-password-warning ss-secondary-text">Skicka aldrig lösenord med Google Formulär</div> -->
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div> <!-- End of role list -->
+				</form> <!-- End of form -->
+			</div> <!-- End of form-class -->
+			<div class="ss-footer"> <!-- Start of footer -->
+			<!-- 
+				<div class="ss-attribution"></div>
+				<div class="ss-legal">
+					<div class="disclaimer-separator"></div>
+					<div class="disclaimer" dir="ltr">
+						<div class="powered-by-logo">
+						<span class="powered-by-text">Tillhandahålls av</span>
+						<a class="ss-logo-link" href="http://drive.google.com"><img class="ss-logo" src="https://ssl.gstatic.com/docs/forms/drive_logo_small.png" alt="Google Drive"></a>
+						</div>
+						<div class="ss-terms">
+							<span class="disclaimer-msg">Formuläret skapades inuti Systemvaruhuset .</span>
+							<br>
+							<a href="https://docs.google.com/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/reportabuse?source=https://docs.google.com/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/viewform">Anmäl otillåten användning</a>
+							<a href="http://www.google.com/accounts/TOS">Användarvillkor</a>
+							<a href="http://www.google.com/google-d-s/terms.html">Ytterligare villkor</a>
+						</div>
+					</div>
+				</div>
+				-->
+			</div> <!-- End of footer -->
+
+			<div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic></div>
+		</div>
+		<!-- 
+		<a class="ss-edit-link" href="https://docs.google.com/a/systemvaruhuset.se/forms/d/1CKuqskJeiTCfRdwDBkcKL2Ovpup82C0lfhYEb_dfA6c/edit">Redigera detta formulär</a>
+		-->
+		<script type='text/javascript' src='/static/forms/client/js/4227836491-formviewer_prd__sv.js'></script>
+		<script type="text/javascript">
+			H5F.setup(document.getElementById('ss-form'));
+			_initFormViewer("[100,\x22#e05e2c\x22,[]\n]\n");
+		</script>
+	</div>
+</body>
+</html>
