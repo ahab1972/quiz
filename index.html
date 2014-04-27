@@ -189,7 +189,40 @@
 		background-color:#D5D6D2;
 		}
 		
-		
+		<!--
+		The following is courtesy of http://viralpatel.net/blogs/css-radio-button-checkbox-background/
+		/*
+		Hide radio button (the round disc)
+		we will use just the label to create pushbutton effect
+		*/ -->
+		input[type=radio] {
+			display:none; 
+			margin:10px;
+		}
+		 
+		 <!--
+		/*
+		  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+		  Add some margin, padding to label
+		*/ -->
+		input[type=radio] + label {
+			display:inline-block;
+			margin:-2px;
+			padding: 4px 12px;
+			background-color: #e7e7e7;
+			border-color: #ddd;
+		}
+		<!--
+		/*
+		 Change background color for label next to checked radio button
+		 to make it look like highlighted button
+		*/ -->
+		input[type=radio]:checked + label { 
+		   background-image: none;
+			background-color:#d0d0d0;
+		}
+				
+				
 	</style> <!-- End of CSS -->
 
 
@@ -219,7 +252,7 @@
 	<div class="ss-top-of-page">
 		<div class="ss-form-heading">
 			<h1 class="ss-form-title" dir="ltr">ADIBF Sweden Quiz</h1>
-			<div class="ss-form-desc ss-no-ignore-whitespace">A quiz with nice prices. Test verification of mandatory fields</div>
+			<div class="ss-form-desc ss-no-ignore-whitespace">Now with radio buttons...</div>
 
 			<hr class="ss-email-break" style="display:none;">
 			<div class="ss-required-asterisk" aria-hidden="true">*Obligatorisk</div>
@@ -294,49 +327,42 @@
 					</ol>
 					<hr>
 				
-					<div dir="ltr" class="ss-item ss-item-required ss-checkbox">
+					<div dir="ltr" class="ss-item  ss-radio">
 						<div class="ss-form-entry">
 							<label class="ss-q-item-label" for="entry_1353294281">
-								<div class="ss-q-title">What year was the first Nobel Prize awarded?
-									<label for="itemView.getDomIdToLabel()" aria-label="(Obligatoriskt fält)"></label>
-									<span class="ss-required-asterisk">*</span>
-								</div>								
+								<div class="ss-q-title">What year was the first Nobel Prize awarded?</div>								
 							</label>
 
-							<span class="ss-choices ss-choices-required" role="radio group" aria-label="What year was the first Nobel Prize awarded? Hint ">
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.902903876" value="1895" id="group_902903876_1" role="radio" class="ss-q-radio" aria-required="true" required>
-										</span>
-										<span class="ss-choice-label">1895</span>
-									</label>
-								</span> 
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.902903876" value="1901" id="group_902903876_2" role="radio" class="ss-q-radio" aria-required="true">
-										</span>
-										<span class="ss-choice-label">1901</span>
-									</label>
-								</span> 
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.902903876" value="1968" id="group_902903876_3" role="radio" class="ss-q-checkbox" aria-required="true">
-										</span>
-										<span class="ss-choice-label">1968</span>
-									</label>
-								</span>
-							</span>
-							
-			
-		
+								<ul class="ss-choices" role="radiogroup" aria-label="What year was the first Nobel Prize awarded?">
+									<li class="ss-choice-item">
+										<label>
+											<span class="ss-choice-item-control goog-inline-block">
+												<input type="radio" name="entry.902903876" value="1895" id="group_902903876_1" role="radio" class="ss-q-radio" aria-label="1895">
+											</span>
+											<span class="ss-choice-label">1895</span>
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label>
+											<span class="ss-choice-item-control goog-inline-block">
+												<input type="radio" name="entry.902903876" value="1901" id="group_902903876_2" role="radio" class="ss-q-radio" aria-label="1901">
+											</span>
+											<span class="ss-choice-label">1901</span>
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label>
+											<span class="ss-choice-item-control goog-inline-block">
+												<input type="radio" name="entry.902903876" value="1968" id="group_902903876_3" role="radio" class="ss-q-radio" aria-label="1968">
+											</span>
+											<span class="ss-choice-label">1968</span>
+										</label>
+									</li>
+								</ul>
+														
 							<div class="error-message"></div>
 							Page 1/6 <br>
-							<progress value="1" max="6"></progress>
-			
-			
+							<progress value="1" max="6"></progress>			
 						</div>
 					</div>
 				</div> <!-- End of q1 <button type="submit"><img src="" alt="" /> Submit</button> -->
@@ -364,49 +390,48 @@
 						<li>1980: Sweden, a constitutional monarchy, makes its Act of Succession gender-neutral.
 					</ul>
 
-				
-					<div dir="ltr" class="ss-item ss-item-required ss-radiogroup">
-						<div class="ss-form-entry">
-							<label class="ss-q-item-label" for="entry_1993344461">
-								<div class="ss-q-title">How many days is Swedish parental leave?
-									<label for="itemView.getDomIdToLabel()" aria-label="(Obligatoriskt fält)"></label>
-									<span class="ss-required-asterisk">*</span>
-								</div>								
-							</label>
-
-							<span class="ss-choices ss-choices-required" role="radio" aria-label="How many days is Swedish parental leave? Society helper ">
-								<span class="ss-radio-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.1416313824" value="450" id="group_1416313824_1" role="radio" class="ss-q-radio" aria-required="true" required>
-										</span>
-										<span class="ss-choice-label">450</span>
-									</label>
-								</span> 
-								<span class="ss-radio-item">
-									<label>
-										<span class="ss-radio-item-control goog-inline-block">
-											<input type="radio" name="entry.1416313824" value="480" id="group_1416313824_2" role="radio" class="ss-q-radio" aria-required="true">
-										</span>
-										<span class="ss-choice-label">480</span>
-									</label>
-								</span> 
-								<span class="ss-radio-item">
-									<label>
-										<span class="ss-radio-item-control goog-inline-block">
-											<input type="radio" name="entry.1416313824" value="540" id="group_1416313824_3" role="radio" class="ss-q-radio" aria-required="true">
-										</span>
-										<span class="ss-choice-label">540</span>
-									</label>
-								</span>
-							</span>
-							<div class="error-message"></div>
+				<div dir="ltr" class="ss-item  ss-radio">
+					<div class="ss-form-entry">
+						<label class="ss-q-item-label" for="entry_1993344461">
+							<div class="ss-q-title">How many days is Swedish parental leave?</div>
+							<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+						</label>
+		
+				<ul class="ss-choices" role="radiogroup" aria-label="How many days is Swedish parental leave?  ">
+							<li class="ss-choice-item">
+								<label>
+									<span class="ss-choice-item-control goog-inline-block">
+										<input type="radio" name="entry.1416313824" value="450" id="group_1416313824_1" role="radio" class="ss-q-radio" aria-label="450">
+									</span>
+									<span class="ss-choice-label">450</span>
+								</label>
+							</li> 
+							<li class="ss-choice-item">
+								<label>
+									<span class="ss-choice-item-control goog-inline-block">
+										<input type="radio" name="entry.1416313824" value="480" id="group_1416313824_2" role="radio" class="ss-q-radio" aria-label="480">
+									</span>
+									<span class="ss-choice-label">480</span>
+								</label>
+							</li> 
+							<li class="ss-choice-item">
+								<label>
+									<span class="ss-choice-item-control goog-inline-block">
+										<input type="radio" name="entry.1416313824" value="540" id="group_1416313824_3" role="radio" class="ss-q-radio" aria-label="540">
+									</span>
+									<span class="ss-choice-label">540</span>
+								</label>
+							</li>
+						</ul>
+						<div class="error-message"></div>
 							Question 2/6 <br>
 							<progress value="2" max="6"></progress>							
 						</div>
 					</div>
 				</div>  <!-- End of q2 -->
 
+				
+			
 				
 				<div class="ss-form-question errorbox-good q3" role="listitem">   <!-- Start of q3 -->
 					<h1>Sustainability</h1>
@@ -428,47 +453,53 @@
 					As such, for 2013-2016, Sweden will allocate approximately SEK 22 billion (roughly equivalent to 12,2 billion DHS) to environmental measures.
 					Cutting-edge technology, a wealth of natural resources and a high proportion of renewable energy 
 					– Sweden and Swedish companies are on the front line as the world embarks on a shift to more sustainable energy systems.
-					<div dir="ltr" class="ss-item ss-item-required ss-checkbox">
-						<div class="ss-form-entry">
-							<label class="ss-q-item-label" for="entry_517975179">
-								<div class="ss-q-title">How much of the household waste in Sweden ends up in a rubbish dump?
-									<label for="itemView.getDomIdToLabel()" aria-label="(Obligatoriskt fält)"></label>
-									<span class="ss-required-asterisk">*</span>
-								</div>
-							</label>
+				
+					<div dir="ltr" class="ss-item  ss-radio">
+					<div class="ss-form-entry">
+						<label class="ss-q-item-label" for="entry_517975179">
+							<div class="ss-q-title">How much of the household waste in Sweden ends up in a rubbish dump?</div>
+							<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+						</label>
 
-							<span class="ss-choices ss-choices-required" role="radiogroup" aria-label="How much of the household waste in Sweden ends up in a rubbish dump? Sustainability helper ">
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.806044665" value="1%" id="group_806044665_1" role="radio" class="ss-q-radio" aria-required="true" required>
-										</span>
-										<span class="ss-choice-label">1%</span>
-									</label>
-								</span> 
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.806044665" value="2%" id="group_806044665_2" role="radio" class="ss-q-radio" aria-required="true">
-										</span>
-										<span class="ss-choice-label">2%</span>
-									</label>
-								</span> 
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.806044665" value="5%" id="group_806044665_3" role="radio" class="ss-q-radio" aria-required="true">
-										</span>
-										<span class="ss-choice-label">5%</span>
-									</label>
-								</span>
-							</span>
-							<div class="error-message"></div>
+
+
+
+
+						<ul class="ss-choices" role="radiogroup" aria-label="How much of the household waste in Sweden ends up in a rubbish dump?">
+							<li class="ss-choice-item">
+								<label>
+									<span class="ss-choice-item-control goog-inline-block">
+										<input type="radio" name="entry.806044665" value="1%" id="group_806044665_1" role="radio" class="ss-q-radio" aria-label="1%">
+									</span>
+									<span class="ss-choice-label">1%</span>
+								</label>
+							</li> 
+							<li class="ss-choice-item">
+								<label>
+									<span class="ss-choice-item-control goog-inline-block">
+										<input type="radio" name="entry.806044665" value="2%" id="group_806044665_2" role="radio" class="ss-q-radio" aria-label="2%">
+									</span>
+									<span class="ss-choice-label">2%</span>
+								</label>
+							</li> 
+							<li class="ss-choice-item">
+								<label>
+									<span class="ss-choice-item-control goog-inline-block">
+										<input type="radio" name="entry.806044665" value="5%" id="group_806044665_3" role="radio" class="ss-q-radio" aria-label="5%">
+									</span>
+									<span class="ss-choice-label">5%</span>
+								</label>
+							</li>
+						</ul>
+						<div class="error-message"></div>	
 							Question 3/6 <br>
 							<progress value="3" max="6"></progress>							
 						</div>
 					</div>
 				</div>   <!-- End of q3 -->
+				
+				
+
 				<div class="ss-form-question errorbox-good q4" role="listitem">   <!-- Start of q4 -->
 					<h1>Swedish Literature </h1>
 					<img class="main_image" src="literature_credited.jpg" alt="Recycling together">
@@ -495,53 +526,54 @@
 					It further progressed with Johan Henric Kellgren (18th century), the first to write fluent Swedish prose. 
 					Arguably the most famous Swedish poet of the 20th century is Nobel Laureate Tomas Tranströmer. 
 					His poetry is distinguished by a Christian mysticism, moving on the verge between dream and reality, the physical and the metaphysics.
-					<div dir="ltr" class="ss-item ss-item-required ss-checkbox">
-						<div class="ss-form-entry">
-							<label class="ss-q-item-label" for="entry_2134364420">
-								<div class="ss-q-title">When was the first Swedish “book” written?
-									<label for="itemView.getDomIdToLabel()" aria-label="(Obligatoriskt fält)"></label>
-									<span class="ss-required-asterisk">*</span>
-								</div>				
-							</label>
-
-							<span class="ss-choices ss-choices-required" role="radiogroup" aria-label="When was the first Swedish “book” written? Litterature helper ">
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.454052814" value="800 AD" id="group_454052814_1" role="radio" class="ss-q-radio" aria-required="true" required>
-										</span>
-										<span class="ss-choice-label">800 AD</span>
-									</label>
-								</span> 
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.454052814" value="1901" id="group_454052814_2" role="radio" class="ss-q-radio" aria-required="true">
-										</span>
-										<span class="ss-choice-label">1901</span>
-									</label>
-								</span> 
-								<span class="ss-choice-item">
-									<label>
-										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.454052814" value="17th century" id="group_454052814_3" role="radio" class="ss-q-radio" aria-required="true">
-										</span>
-										<span class="ss-choice-label">17th century</span>
-									</label>
+		
+				<div dir="ltr" class="ss-item  ss-radio">
+					<div class="ss-form-entry">
+						<label class="ss-q-item-label" for="entry_2134364420">
+							<div class="ss-q-title">When was the first Swedish “book” written?</div>
+							<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+						</label>
+						
+						<ul class="ss-choices" role="radiogroup" aria-label="When was the first Swedish “book” written?">
+							<li class="ss-choice-item">
+								<label>
+									<span class="ss-choice-item-control goog-inline-block">
+										<input type="radio" name="entry.454052814" value="800 AD" id="group_454052814_1" role="radio" class="ss-q-radio" aria-label="800 AD">
+									</span>
+									<span class="ss-choice-label">800 AD</span>
+								</label>
+							</li> 
+						<li class="ss-choice-item">
+							<label>
+								<span class="ss-choice-item-control goog-inline-block">
+									<input type="radio" name="entry.454052814" value="1901" id="group_454052814_2" role="radio" class="ss-q-radio" aria-label="1901">
 								</span>
-							</span>
-							<div class="error-message"></div>
+								<span class="ss-choice-label">1901</span>
+							</label>
+						</li> 
+						<li class="ss-choice-item">
+							<label>
+								<span class="ss-choice-item-control goog-inline-block">
+									<input type="radio" name="entry.454052814" value="17th century" id="group_454052814_3" role="radio" class="ss-q-radio" aria-label="17th century">
+								</span>
+								<span class="ss-choice-label">17th century</span>
+							</label>
+						</li>
+					</ul>
+					<div class="error-message"></div>
+					
 							Question 4/6 <br>
 							<progress value="4" max="6"></progress>													
 						</div>
 					</div>
 				</div>   <!-- End of q4 -->
 				
-				
+								
 				<div class="ss-form-question errorbox-good q5" role="listitem">   <!-- Start of q5 -->
 					<h1>Children’s literature </h1>
 					<img class="main_image" src="childrens_literature_credited.jpg" alt="Reading for children">
-					<div class="preamble">The first Swedish children book was published in 1591 as an adaptation of a German book. 
+					<div class="preamble">
+					The first Swedish children book was published in 1591 as an adaptation of a German book. 
 					Today, Swedish children’s literature has transformed into a very independent and strong genre. 
 					</div class="preamble">
 					<p>Swedish writer Astrid Lindgren has gained international fame through her works such as Pippi Longstocking, Emil of Maple Hills, among others. 
@@ -553,47 +585,55 @@
 					Coincidentally, Småland is also the name of the children’s playground at Ikea. 
 					<p>Swedish children’s literature remains one of its strongest genres because it maintains a child’s perspective without avoiding taboo topics.  
 					Common topics currently found in Swedish children’s literature are moral dilemmas, peer pressure, and respect for the environment. 
-					<div dir="ltr" class="ss-item ss-item-required ss-radiogroup">
+				
+					<div dir="ltr" class="ss-item ss-item-required ss-radio">
 						<div class="ss-form-entry">
 							<label class="ss-q-item-label" for="entry_4357382">
 								<div class="ss-q-title">How many languages have Astrid Lindgren’s books been translated into?
 									<label for="itemView.getDomIdToLabel()" aria-label="(Obligatoriskt fält)"></label>
 									<span class="ss-required-asterisk">*</span>
-								</div>								
+								</div>
+								<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 							</label>
 
-							<span class="ss-choices ss-choices-required" role="radiogroup" aria-label="How many languages have Astrid Lindgren’s books been translated into? Astrid helper ">
-								<span class="ss-choice-item">
+							<ul class="ss-choices" role="radiogroup" aria-label="How many languages have Astrid Lindgren’s books been translated into?">
+								<li class="ss-choice-item">
 									<label>
 										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.1902405508" value="8" id="group_1902405508_1" role="radio" class="ss-q-radio" aria-required="true" required>
+											<input type="radio" name="entry.1902405508" value="8" id="group_1902405508_1" role="radio" class="ss-q-radio" aria-label="8" required="" aria-required="true">
 										</span>
 										<span class="ss-choice-label">8</span>
 									</label>
-								</span> 
-								<span class="ss-choice-item">
+								</li> 
+								<li class="ss-choice-item">
 									<label>
 										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.1902405508" value="18" id="group_1902405508_2" role="radio" class="ss-q-radio" aria-required="true">
+											<input type="radio" name="entry.1902405508" value="18" id="group_1902405508_2" role="radio" class="ss-q-radio" aria-label="18" required="" aria-required="true">
 										</span>
 										<span class="ss-choice-label">18</span>
 									</label>
-								</span> 
-								<span class="ss-choice-item">
+								</li> 
+								<li class="ss-choice-item">
 									<label>
 										<span class="ss-choice-item-control goog-inline-block">
-											<input type="radio" name="entry.1902405508" value="80" id="group_1902405508_3" role="radio" class="ss-q-radio" aria-required="true">
+											<input type="radio" name="entry.1902405508" value="80" id="group_1902405508_3" role="radio" class="ss-q-radio" aria-label="80" required="" aria-required="true">
 										</span>
 										<span class="ss-choice-label">80</span>
 									</label>
-								</span>
-							</span>
+								</li>
+							</ul>
 							<div class="error-message"></div>
+						
 							Question 5/6 <br>
 							<progress value="5" max="6"></progress>							
 						</div>
 					</div>
 				</div>    <!-- End of q5 -->
+				
+				
+
+				
+				
 				<div class="ss-form-question errorbox-good" role="listitem">
 					<div dir="ltr" class="ss-item ss-item-required ss-text">
 						<div class="ss-form-entry">
@@ -673,3 +713,32 @@
 	</div>
 </body>
 </html>
+
+<!--
+sista frågorna...
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1091911802"><div class="ss-q-title">What is your name
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1091911802" value="" class="ss-q-short" id="entry_1091911802" dir="auto" aria-label="What is your name  " title="">
+<div class="error-message"></div>
+<div class="required-message">Det här är en obligatorisk fråga</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1190667692"><div class="ss-q-title">What is your phone number?
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1190667692" value="" class="ss-q-short" id="entry_1190667692" dir="auto" aria-label="What is your phone number?  " title="">
+<div class="error-message"></div>
+<div class="required-message">Det här är en obligatorisk fråga</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_832651433"><div class="ss-q-title">What is your e-mail?
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.832651433" value="" class="ss-q-short" id="entry_832651433" dir="auto" aria-label="What is your e-mail?  " title="">
+<div class="error-message"></div>
+<div class="required-message">Det här är en obligatorisk fråga</div>
+</div></div></div>
+-->
