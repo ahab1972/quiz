@@ -66,10 +66,13 @@
 			font-size: 16px;
 			line-height: 24px;
 			margin: 0 auto;
-			max-width: 800px;
+			max-width: 1100px;
 			padding: 0 20px 20px;
 			width: 80%;
 		}
+		
+		
+			
 		
 		h1.ss-form-title, .ss-resp-card .ss-header-image {
 			background: #e05e2c url('//themes.googleusercontent.com/image?id=1jFLY6BvhmAGtydKbS1Jtn9qzsFAAd4S4NDBt733E07vC3uMIPeNKYIwU3SBb8iKR_IrF\000026tw=600\000026th=600') bottom right no-repeat;
@@ -160,7 +163,8 @@
 			padding: 5px 0 0;
 		}
 		img.main_image {
-			max-width: 100%;
+			float:right;
+			max-width: 70%;
 			height: auto:;
 			width: auto/9;
 			border-style: solid;
@@ -170,12 +174,12 @@
 			border-radius: 10px;
 		}
 		img.portrait_body_image {
-			max-width: 25%;
+			max-width: 10%;
 			height: auto:;
 			width: auto/9
 		}
 		img.landscape_body_image {
-			max-width: 50%;
+			max-width: 25%;
 			height: auto:;
 			width: auto/9
 		}
@@ -192,6 +196,8 @@
 			<!--  text-indent: 5px; -->
 			font-variant: small-caps;
 		}
+
+		
 		div.preamble {
 		color:#005293;
 		font-weight: bold; 
@@ -269,15 +275,19 @@
 				<ol role="list" class="ss-question-list" style="padding-left: 0">
 					<div class="ss-form-question errorbox-good q1" role="listitem">				<!-- start of q1 -->
 						<h1 class="heading">Innovation </h1>
-						<img class="main_image" src="innovation_credited.jpg" alt="Skype-user">
-						<div class="preamble">
-							Sweden is a small country, home to no more than 0.14% of the global population.  
-							Less than a century ago, it was even among the poorest nations in Europe.  
-							Today, however, Sweden has rapidly emerged as a world leader in innovation. 
-							Swedish companies have in many instances “outgrown” Sweden, with products like 
-							Ericsson Telecom Systems, Ikea Furniture, ABB Powerstations, Volvo Trucks, 
-							Minecraft computer games and Skype now well-known throughout the world. 
-						</div>
+						<div class="intro">
+							<div class="introImg">
+								<img class="main_image" src="innovation_credited.jpg" alt="Skype-user">
+								<div class="preamble">
+									Sweden is a small country, home to no more than 0.14% of the global population.  
+									Less than a century ago, it was even among the poorest nations in Europe.  
+									Today, however, Sweden has rapidly emerged as a world leader in innovation. 
+									Swedish companies have in many instances “outgrown” Sweden, with products like 
+									Ericsson Telecom Systems, Ikea Furniture, ABB Powerstations, Volvo Trucks, 
+									Minecraft computer games and Skype now well-known throughout the world. 
+								</div>
+							</div>
+						</div>	
 						<p>One of the most widely recognized Swedish inventors is Alfred Nobel. 
 						In his last will and testament, he donated 94% of his fortune, used to create the Nobel Prize.  
 						The Prize is awarded to those recognized for their “benefit to mankind” in five categories:  
@@ -371,7 +381,7 @@
 					
 					
 					<div class="ss-form-question errorbox-good q2" role="listitem">  <!-- start of q2 -->
-						<h1>Society </h1>
+						<h1 class="heading">Society </h1>
 						<img class="main_image" src="society_credited.jpg" alt="On parental leave">
 						<div class="preamble">
 						Sweden ranks as one of the most gender-egalitarian countries in the world. 
@@ -380,11 +390,11 @@
 						The parental leave is financed jointly by all Swedes through the tax system. 
 						</div class="preamble">
 						<p>The Swedish Tax Agency is actually one of the most popular governmental agencies. Unlike in some countries, where paying tax is seen as something negative, many Swedes tolerate – and even welcome – taxation, as it is the foundation for high quality public services. 
-						<p>Fun Fact:  The Swedish word for tax – skatt – also means “treasure.” 
-						<p><img class="landscape_body_image" src="society_body_credited.jpg" alt="In the woods">
+						<p>Fun Fact:  The Swedish word for tax – skatt – also means “treasure.” 						
 						Sweden is also home to beautiful nature, which can be explored and enjoyed by all Swedes thanks to the the Right of Public Access, written into the Swedish constitution. While the right allows the public to roam freely on any land, it also brings responsibilities – to treat flora and fauna and other people’s property with care. The philosophy can be summed up in the phrase, ‘Don’t disturb, Don’t destroy’.
+						<p><img class="landscape_body_image" src="society_body_credited.jpg" alt="In the woods">
 						<p>Swedish citizens are additionally afforded the right to “Freedom of information,” which allows the public access to official records.  Scrutiny is seen as valuable for a democracy, and transparency reduces the risk of power being abused. 
-						Some important dates in Swedish history: 
+						<p>Some important dates in Swedish history: 
 						<ul>
 							<li>1250s: King Birger Jarl passes a law on violence against women prohibiting rape and abduction.
 							<li>1921: Women get the right to vote and run for office. 
@@ -454,7 +464,7 @@
 				
 					
 					<div class="ss-form-question errorbox-good q3" role="listitem">   <!-- Start of q3 -->
-						<h1>Sustainability</h1>
+						<h1 class="heading">Sustainability</h1>
 						<img class="main_image" src="sustainability_credited.jpg" alt="Recycling together">
 						<div class="preamble">
 						Sweden was an early adopter of sustainable thinking. 
@@ -533,7 +543,7 @@
 					</div>   <!-- End of q3 -->
 					
 					<div class="ss-form-question errorbox-good q4" role="listitem">   <!-- Start of q4 -->
-						<h1>Swedish Literature </h1>
+						<h1 class="heading">Swedish Literature</h1>
 						<img class="main_image" src="literature_credited.jpg" alt="Recycling together">
 						<div class="preamble">The first literary text from Sweden is the Rök Runestone, carved during the Viking Age around 800 AD. 
 						It wasn’t until the Swedish language was standardized in the 16th century that Swedish literature started to flourish.
@@ -621,11 +631,11 @@
 					
 									
 					<div class="ss-form-question errorbox-good q5" role="listitem">   <!-- Start of q5 -->
-						<h1>Children’s literature </h1>
+						<h1 class="heading">Children’s literature</h1>
 						<img class="main_image" src="childrens_literature_credited.jpg" alt="Reading for children">
 						<div class="preamble">
 						The first Swedish children book was published in 1591 as an adaptation of a German book. 
-						Today, Swedish children’s literature has transformed into a very independent and strong genre. 
+						Today, Swedish Children’s Literature has transformed into a very independent and strong genre. 
 						</div class="preamble">
 						<p>Swedish author Astrid Lindgren has gained international fame through her works such as Pippi Longstocking, Emil of Maple Hills, among others. 
 						With 145 million books sold worldwide in more than 80 different languages, she is the most read Swedish author of all categories. 
